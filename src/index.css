@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  background: #E5E5E5;
+}
+
+.app {
+  width: 380px;
+  height: 380px;
+  margin: auto;
+  background: #0B2434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 320px;
+  height: 320px;
+  background: #F5F5F5;
+  border-radius: 6px;
+}
+
+header > .title {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25.6px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #2B283A;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+header > .description {
+  margin: 0 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #4A4E74;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border: none;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dice-wrapper {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.dice-button {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  width: 36px;
+  height: 36px;
+  margin: 10px;
+}
+
+.locked {
+  background: #59E391;
+  cursor: default;
+}
+
+.roll-button {
+  margin-top: 10px;
+  width: 92px;
+  height: 36px;
+  background: #5035FF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.18);
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.dot-container {
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0;
+}
+
+.dot-1 {
+  left: 5px;
+  top: 5px;
+}
+
+.dot-2 {
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dot-3 {
+  left: 5px;
+  bottom: 5px;
+}
+
+.dot-4 {
+  right: 5px;
+  top: 5px;
+}
+
+.dot-5 {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dot-6 {
+  right: 5px;
+  bottom: 5px;
+}
+
+.dot-middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number-of-rolls, .time-elapsed {
+  font-family: Inter;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.number-of-rolls {
+  margin-top: 10px;
+}
+
+.time-elapsed {
+  margin-top: 2px;
+}
+
+.number-of-rolls > span, .time-elapsed > span {
+  font-weight: bold;
+}
+
+.Modal {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+.Modal > button {
+  font-family: 'Inter';
+  font-size: 10pt;
+  margin: auto;
+  display: flex;
+  margin-top: 10px;
+  color: white;
+  background-color: #5035FF;
+  width: 80px;
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  padding: 0 23px;
+  border-radius: 4px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+.Modal > h2 {
+  font-family: 'Inter';
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.Modal > div {
+  font-family: 'Inter';
+}
