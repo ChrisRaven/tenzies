@@ -47,9 +47,10 @@ export default function Footer({numberOfRolls, finished, restarted}) {
         localStorage.setItem('lowestNumberOfRolls', numberOfRolls)
       }
 
-      if (elapsed < shortestTime) {
+      let currentDiff = Date.now() - startTime // to save more accurate time
+      if (currentDiff < shortestTime) {
         message.push(<div key="2">{`New best time: ${date}`}</div>)
-        localStorage.setItem('shortestTime', elapsed)
+        localStorage.setItem('shortestTime', currentDiff)
       }
       if (message.length) {
         setIsOpen(true)
